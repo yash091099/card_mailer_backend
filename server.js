@@ -11,7 +11,7 @@ app.post('/sendCard', async (req, res) => {
   try {
     const { firstName, lastName, email, mobile, address,sender } = req.body;
 
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer?.launch();
     const page = await browser.newPage();
   
 
